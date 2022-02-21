@@ -1,0 +1,1506 @@
+
+{
+
+	"SNavigator":
+	{	
+		"COMMENT":"ISP Navigation Panel...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Welcome...",
+					"type":"moduleRef",
+					"subtype":"module", 
+					 "name":"NOOP",
+					 "edges":
+							[
+							]
+					}															
+		},		
+            
+		"CModules":
+		{
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+            
+            "NOOP":{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"actionname":"NOOP", "features":""}
+				]
+			}			
+		}
+	},
+	
+    "SSceneStart":
+	{	
+		"COMMENT":"Today we're going to...",
+		"type":"animation",
+		"version":"0.1.0",
+		"volatile":true,
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"NOOP",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"actionname":"NOOP", "autostep":false, "features":""}
+                    ],                        
+					"edges":
+							[
+							]
+					}
+		},		
+			
+		"CModules":
+		{		
+		}
+    },
+
+	"SScene1a":
+	{	
+		"COMMENT":"science area topic selection...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Select an area of science...",
+					"type":"moduleRef",
+					"subtype":"module", 
+					"name":"SELECTAREA",
+					"edges":
+							[
+								{"constraint":"AREA_CHANGED","edge":"SELECTTOPIC" },
+								{"constraint":"","edge":"root" }
+							]
+					},
+															
+			"SELECTTOPIC":{"COMMENT":"Select a topic within that area...",
+					"type":"moduleRef",
+					"subtype":"module", 
+					"name":"SELECTTOPIC",
+					"edges":
+							[
+								{"constraint":"AREA_CHANGED" , "edge":"SELECTTOPIC" },
+                                {"constraint":"TOPIC_CHANGED", "edge":"SELECTTV" },
+								{"constraint":""             , "edge":"SELECTTOPIC" }
+							]
+					},					
+										
+            "SELECTTV":{"COMMENT":"Select a Target Variable within that Topic...",
+                    "type":"moduleRef",
+                    "subtype":"module", 
+                    "name":"SELECTV",
+                    "edges":
+                            [
+                                {"constraint":"AREA_CHANGED"    , "edge":"SELECTTOPIC" },
+                                {"constraint":"TOPIC_CHANGED"   , "edge":"SELECTTV" },
+                                {"constraint":"VARIABLE_CHANGED", "edge":"WAITFORNEXT" },
+								{"constraint":""                , "edge":"SELECTTV" }
+                            ]
+                    },					
+                                        
+            "WAITFORNEXT":{"COMMENT":"When module is complete - move to next scene in the scenegraph",
+					 "type":"moduleRef",
+					"subtype":"module", 
+					 "name":"WAITFORNEXT",
+					 "edges":
+							[
+								{"constraint":"AREA_CHANGED"    , "edge":"SELECTTOPIC" },
+                                {"constraint":"TOPIC_CHANGED"   , "edge":"SELECTTV" },
+                                {"constraint":"VARIABLE_CHANGED", "edge":"WAITFORNEXT" },
+                                {"constraint":"!COMPLETE"       , "edge":"WAITFORNEXT" }
+							]
+					}															
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+		
+			"SELECTAREA":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"trackname":"track1", "autostep":false, "features":""}
+				]
+            },
+			"SELECTTOPIC":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"trackname":"track2", "autostep":false, "features":""}
+				]
+            },
+			"SELECTV":
+			{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"trackname":"track3", "autostep":false, "features":""}
+				]
+            },
+            "WAITFORNEXT":{
+				"COMMENT":"",
+				"type":"module",
+				"reuse":true,
+				"actiontracks":		
+				[
+					{"trackname":"track4", "autostep":false, "features":""}
+				]
+            }
+		}
+	},
+	"SScene1":
+	{	
+		"COMMENT":"Click the target variable...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Click on the TV the question is asking about...",
+					"type":"module",
+                    "name":"SELECTTV",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":false, "features":""}
+                    ],                        
+					"edges":
+							[
+								{"constraint":"ANS_WRONG","edge":"TVWRONG" },
+								{"constraint":""         ,"edge":"TVCORRECT" }
+							]
+					},
+                                                            
+            "TVWRONG":{"COMMENT":"TV Selection wrong...",
+                "type":"module", 
+                "name":"TVWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track2", "autostep":false, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"ANS_WRONG","edge":"TVWRONG" },
+                            {"constraint":""         ,"edge":"TVCORRECT" }
+                ]
+                },					
+                                            
+            "TVCORRECT":{"COMMENT":"TV Selection correct...",
+                "type":"module", 
+                "name":"TVCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track3", "autostep":true, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"","edge":"TVALUESELECTION" }
+                        ]
+                },					
+                                                
+            "TVALUESELECTION":{"COMMENT":"TV Selection incorrect...",
+                "type":"module", 
+                "name":"VALUESELECTION",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track4", "autostep":false, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"ANS_WRONG","edge":"TVALWRONG" },
+                            {"constraint":""         ,"edge":"TVALCORRECT" }
+                        ]
+                },					
+
+
+            "TVALWRONG":{"COMMENT":"TV Values Selection wrong...",
+                "type":"module", 
+                "name":"TVALWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track5", "autostep":false, "features":""}
+                ],                                        
+                "edges":
+                        [
+                            {"constraint":"ANS_WRONG","edge":"TVALWRONG" },
+                            {"constraint":""         ,"edge":"TVALCORRECT" }
+                    ]
+                },					
+                                            
+            "TVALCORRECT":{"COMMENT":"TV Values Selection correct...",
+                "type":"module", 
+                "name":"TVALCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track6", "autostep":true, "stepdelay":500, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"","edge":"IVALUESELECTION" }
+                        ]
+                },					
+                                                
+            "IVALUESELECTION":{"COMMENT":"IV Selection incorrect...",
+                "type":"module", 
+                "name":"VALUESELECTION",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track7" , "autostep":false, "features":"FTR_IV1"},
+                    {"trackname":"track7b", "autostep":false, "features":"FTR_IVN"},
+                    {"trackname":"track7c", "autostep":false, "features":"FTR_IVLAST"}                    
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"ANS_WRONG","edge":"IVALWRONG" },
+                            {"constraint":""         ,"edge":"IVALCORRECT" }
+                        ]
+                },					
+
+
+
+            "IVALWRONG":{"COMMENT":"IV Values Selection wrong...",
+                "type":"module", 
+                "name":"IVALWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track8", "autostep":false, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"ANS_WRONG","edge":"IVALWRONG" },
+                            {"constraint":""         ,"edge":"IVALCORRECT" }
+                    ]
+                },					
+                                            
+            "IVALCORRECT":{"COMMENT":"IV Values Selection correct...",
+                "type":"module", 
+                "name":"IVALCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track9", "autostep":true, "stepdelay":500, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"TABLECOMPLETE","edge":"NEXTSCENE" },
+                            {"constraint":"","edge":"IVALUESELECTION" }
+                        ]
+                },					
+                                                
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":false, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+		}
+	},
+	"SScene2":
+	{	
+		"COMMENT":"Feature Focus --different/same",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+                    "name":"SUMMARY",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":true, "stepdelay":500, "features":""},
+                        {"trackname":"track2", "autostep":true, "stepdelay":500, "features":""},
+                        {"trackname":"track3", "autostep":true, "stepdelay":2500, "features":""}
+                    ],                        
+					 "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+		}		
+	},
+
+	"SScene3":
+	{	
+		"COMMENT":"Example Experimental designs Introduction...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INTRO",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":false, "stepdelay":2500, "features":""}
+                    ],                        
+				    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                },					                                                
+                
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
+		}		
+	},
+
+	"SScene4":
+	{	
+		"COMMENT":"Meta-cognitive prompt...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INTRO-METACOG-PROMPT",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":false, "stepdelay":2500, "features":""}
+                    ],                        
+				    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene5":
+	{	
+		"COMMENT":"Example Setup Instrutions...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INSTRUCTIONS",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":false, "stepdelay":2500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene6":
+	{	
+		"COMMENT":"Example Setup Instrutions...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INSTRUCTIONS",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1", "autostep":false, "stepdelay":2500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene7":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INSTRUCTIONS",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"FTR_TEDEXP1","edge":"TEDEXP1" },
+                                {"constraint":"",           "edge":"TEDEXP2" }
+							]
+                    },					 
+
+			"TEDEXP1":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INSTRUCTIONS",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					
+                                                                    
+			"TEDEXP2":{"COMMENT":"...",
+					"type":"module", 
+					"name":"INSTRUCTIONS",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track2",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene8":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"...",
+					"type":"module", 
+					"name":"Variables",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1a",  "autostep":true, "stepdelay": 600, "features":""},
+                        {"trackname":"track1b", "autostep":true, "stepdelay":  800, "features":""},
+                        {"trackname":"track2a",  "autostep":true, "stepdelay": 600, "features":""},
+                        {"trackname":"track2b", "autostep":true, "stepdelay":  800, "features":""},
+                        {"trackname":"track3a",  "autostep":true, "stepdelay": 600, "features":""},
+                        {"trackname":"track3b", "autostep":true, "stepdelay":  800, "features":""},
+                        {"trackname":"track4a",  "autostep":true, "stepdelay": 600, "features":""},
+                        {"trackname":"track4b", "autostep":true,  "stepdelay": 800, "features":""},
+                        {"trackname":"track5",  "autostep":false,  "stepdelay":  0, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					
+                                  
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene9":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Is this a Good way to design...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "archive":{"trackname":"track1",  "autostep":true, "stepdelay":500,  "features":""},
+                    "actiontracks":		
+                    [
+                        
+                        {"trackname":"track2",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"INCOMPLETE","edge":"root" },
+                                {"constraint":"CORRECT",   "edge":"RIGHT" },
+                                {"constraint":"",          "edge":"WRONG" }                                
+							]
+                    },					                                              
+                    
+			"RIGHT":{"COMMENT":"...",
+					"type":"module", 
+					"name":"RESP_RIGHT",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track3", "autostep":true, "stepdelay":500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					                                                
+
+			"WRONG":{"COMMENT":"...",
+					"type":"module", 
+					"name":"RESP_WRONG",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track4", "autostep":true, "stepdelay":500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene10":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say it was not a good way...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "archive": {"trackname":"track1",  "autostep":true, "stepdelay":500,  "features":""},
+                    "actiontracks":		
+                    [
+                        {"trackname":"track2",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene11":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why is this actually not a good Expt...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "archive": {"trackname":"track1",  "autostep":true, "stepdelay":500,  "features":""},
+                    "actiontracks":		
+                    [                        
+                        {"trackname":"track2",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene12":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"The results ... May either be ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "archive": {"trackname":"track2",  "autostep":false, "features":""},
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":true, "stepdelay":0,  "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":false, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene12A":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Imagine the result...were different across conditions, Could you tell",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"INCOMPLETE","edge":"root" },
+                                {"constraint":"CORRECT",   "edge":"RIGHT" },
+                                {"constraint":"",          "edge":"WRONG" }
+							]
+                    },					                                              
+                    
+			"RIGHT":{"COMMENT":"You're right, we could not tell for sure that the...",
+					"type":"module", 
+					"name":"RESP_RIGHT",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track2", "autostep":true, "stepdelay":0, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					                                                
+
+			"WRONG":{"COMMENT":"Actually, we could not tell for sure that the...",
+					"type":"module", 
+					"name":"RESP_WRONG",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track3", "autostep":true, "stepdelay":500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+					},					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene13":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say you could not know for sure ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":false, "features":""},
+                        {"trackname":"track2",  "autostep":true, "stepdelay":500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene14":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Even though you said you could tell ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":true,  "isgroup":true, "stepdelay":200, "features":""},
+                        {"trackname":"track2",  "autostep":false, "isgroup":true, "features":""},
+                        {"trackname":"track3",  "autostep":true, "stepdelay":500, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene15":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"In this experiment, the students are testing...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track0A",  "autostep":true,  "isgroup":true, "stepdelay":500,  "features":""},
+                        {"trackname":"track0B",  "autostep":true,  "isgroup":true, "stepdelay":500,  "features":""},
+                        {"trackname":"track0C",  "autostep":true,  "isgroup":true, "stepdelay":500,  "features":""},
+                        {"trackname":"track0D",  "autostep":false, "isgroup":true, "stepdelay":500,  "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"NC1CORRECT",   "edge":"NC1RIGHT" },
+                                {"constraint":"",             "edge":"NC1WRONG" }                                
+							]
+                    },					                                                
+
+                    
+            "NC1RIGHT":{"COMMENT":"NC1 Selection correct...",
+                "type":"module", 
+                "name":"TVCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track1",  "autostep":true, "stepdelay":500, "features":""},
+                    {"trackname":"track1A", "autostep":true, "stepdelay":500, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"NC2CORRECT",   "edge":"NC2RIGHT" },
+                            {"constraint":"",             "edge":"NC2WRONG" }                                
+                    ]
+                },					
+                                                
+                    
+            "NC1WRONG":{"COMMENT":"NC1 Selection wrong...",
+                "type":"module", 
+                "name":"TVWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track1",  "autostep":true, "stepdelay":500,  "features":""},
+                    {"trackname":"track1B", "autostep":true, "stepdelay":500,  "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"NC2CORRECT",   "edge":"NC2RIGHT" },
+                            {"constraint":"",             "edge":"NC2WRONG" }                                
+                        ]
+                },					
+                                            
+
+            "NC2RIGHT":{"COMMENT":"NC2 Selection correct...",
+                "type":"module", 
+                "name":"TVCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track2",  "autostep":true, "stepdelay":500, "features":""},
+                    {"trackname":"track2A", "autostep":true, "stepdelay":500, "features":""}
+                ],                                        
+                "edges":
+                        [
+                            {"constraint":"NC3CORRECT",   "edge":"NC3RIGHT" },
+                            {"constraint":"",             "edge":"NC3WRONG" }                                
+                    ]
+                },					
+                                                
+                    
+            "NC2WRONG":{"COMMENT":"NC2 Selection wrong...",
+                "type":"module", 
+                "name":"TVWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track2",  "autostep":true, "stepdelay":500, "features":""},
+                    {"trackname":"track2B", "autostep":true, "stepdelay":500, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"NC3CORRECT",   "edge":"NC3RIGHT" },
+                            {"constraint":"",             "edge":"NC3WRONG" }                                
+                        ]
+                },					
+                                            
+
+            "NC3RIGHT":{"COMMENT":"NC3 Selection correct...",
+                "type":"module", 
+                "name":"TVCORRECT",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track3A", "autostep":true, "stepdelay":1000, "features":""}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"", "edge":"SUMMARY" }                                
+                        ]
+                },					
+                                                
+                    
+            "NC3WRONG":{"COMMENT":"NC3 Selection wrong...",
+                "type":"module", 
+                "name":"TVWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track3B", "autostep":true, "stepdelay":1000, "features":""}                    
+                ],                        
+                "edges":
+                    [
+                        {"constraint":"", "edge":"SUMMARY" }                                
+                    ]
+                },					
+                                            
+            "SUMMARY":{"COMMENT":"So, in this experiment, even though...",
+                "type":"module", 
+                "name":"TVWRONG",
+                "reuse":true,
+                "actiontracks":		
+                [
+                    {"trackname":"track4A", "autostep":true,  "features":""},
+                    {"trackname":"track4B", "autostep":true,  "features":"FTR_TEDEXP1"},
+                    {"trackname":"track4C", "autostep":true,  "features":"FTR_TEDEXP1"},
+                    {"trackname":"track4D", "autostep":false, "features":"FTR_TEDEXP1"},
+                    {"trackname":"track4E", "autostep":false, "features":"FTR_TEDEXP2"}
+                ],                        
+                "edges":
+                        [
+                            {"constraint":"",   "edge":"NEXTSCENE" }
+                        ]
+                },					
+                                            
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene16":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Please correct the experiment ...",
+					"type":"module", 
+					"name":"FFCORRECTION",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",   "autostep":true,  "stepdelay":500,  "features":"FTR_TEDEXP1"},
+                        {"trackname":"track1A",  "autostep":true,  "stepdelay":500,  "features":"FTR_TEDEXP2"},
+                        {"trackname":"track2",   "autostep":false, "stepdelay":500,  "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"INCOMPLETE","edge":"root" },
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                          
+                                          
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene17":
+	{	
+		"COMMENT":"TED Expt 1",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Explain why this is a good way to ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"INCOMPLETE","edge":"root" },
+                                {"constraint":"","edge":"SUMMARY" }
+							]
+                    },					                                                
+                    
+			"SUMMARY":{"COMMENT":"Summary - This is a good experiment, because ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track2",  "autostep":false, "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene18":
+	{	
+		"COMMENT":"TED POSTTEST INTRO",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":true,   "stepdelay":800,  "features":""},
+                        {"trackname":"track2",   "autostep":true,  "stepdelay":800,  "features":""},
+                        {"trackname":"track3",   "autostep":true,  "stepdelay":800,  "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene19":
+	{	
+		"COMMENT":"TED POSTTEST SETUP",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1a",  "autostep":false,  "stepdelay":800,  "features":"FTR_POST1"},
+                        {"trackname":"track1",   "autostep":false, "stepdelay":800,  "features":"!FTR_POST1"}
+                    ],                         
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene20":
+	{	
+		"COMMENT":"TED POST Question...",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you design the epxeriment ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":false, "stepdelay":800,  "features":""}
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    },
+	"SScene21":
+	{	
+		"COMMENT":"TED SUMMARY",
+		"type":"animation",
+		"version":"0.1.0",
+	
+		"CNodes":
+		{	
+			"COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CNodes  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@",
+						
+			"root":{"COMMENT":"Why did you say ...",
+					"type":"module", 
+					"name":"QUESTION1",
+                    "reuse":true,
+                    "actiontracks":		
+                    [
+                        {"trackname":"track1",  "autostep":true, "stepdelay":800,  "features":""},
+                        {"trackname":"track2",  "autostep":true, "stepdelay":800,  "features":""},
+                        {"trackname":"track3",  "autostep":true, "stepdelay":800,  "features":""},
+                        {"actionname":"ENDOFTRACKS", "autostep":false, "features":""}
+
+                    ],                        
+                    "edges":
+							[
+                                {"constraint":"","edge":"NEXTSCENE" }
+							]
+                    },					                                                
+                    
+            "NEXTSCENE":{"COMMENT":"When Scene is complete - move to next scene in the scenegraph",
+                        "type":"module", 
+                        "name":"NEXTSCENE",
+                        "reuse":true,
+                        "actiontracks":		
+                        [
+                            {"actionname":"NOOP", "autostep":true, "features":""}
+                        ],                                              
+                        "edges":
+                        [
+                        ]
+                    }
+		},		
+			
+		"CModules":
+		{		
+            "COMMENT":"@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@  CModules  @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"        
+        }
+    }
+
+}
+
+
+
+
+
+

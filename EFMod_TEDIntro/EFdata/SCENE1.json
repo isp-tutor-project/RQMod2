@@ -1,0 +1,9 @@
+{
+    "_MODULEDATA":"v1.0.0",
+    "SScene1": {
+        "STextBox1": {
+            "layoutsource":"$EFL_eftext.STextBox1",
+            "fontSize":40
+        }
+    }
+}

@@ -1,0 +1,11 @@
+{
+    "_MODULEDATA":"v1.0.0",
+    "SScene12": {
+        "Stitle": {
+            "layoutsource":"$EFL_eftext.S12.Stitle",
+            "datasource": "$EFL_efdata.scene12.scenePrompt",
+            "fontSize":50,
+            "xname":"scene12Stitle"
+        }        
+    }
+}

@@ -1,0 +1,25 @@
+{
+    "_LIBRARY": {
+        "eflist": {},
+        "eftext": {
+            "SbreadCrumbs": {
+                "src": "$$EFX.html_crumbText"
+            },
+            "Stitle": {
+                "src": "$$EFX.html_text"
+            },
+            "Squestion1": {
+                "src": "$$EFX.html_text"
+            },
+            "Squestion2": {
+                "src": "$$EFX.html_textleft"
+            },
+            "Squestion3": {
+                "src": "$$EFX.html_text"
+            }
+        },
+        "efinput": {},
+        "eftable": {},
+        "efdata": {}
+    }
+}

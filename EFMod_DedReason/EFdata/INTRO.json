@@ -1,0 +1,13 @@
+{
+    "_MODULEDATA":"v1.0.0",
+
+    "SIntro": {
+        "Stitle": {
+            "layoutsource":"$EFL_eftext.Stitle",
+            "htmlData":{
+                "html": "{{$EFO_DEDR_INTRO|1}}"
+            },
+            "fontSize":30
+        }
+    }    
+}

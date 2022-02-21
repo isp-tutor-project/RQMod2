@@ -1,0 +1,22 @@
+{
+	"SIntro": {
+		"tracks": {
+			"track1": {
+				"en": {
+					"html": "{{$EFO_DEDR_INTRO|part1}}",
+					"text": "{{$EFO_DEDR_INTRO|part1}}",
+					"cueSet": "..............................................",
+					"segments": [],
+					"timedSet": [],
+					"templates": {},
+					"trim": [
+						0
+					],
+					"volume": [
+						1
+					]
+				}
+			}
+		}
+	}
+}

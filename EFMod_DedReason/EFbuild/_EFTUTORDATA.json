@@ -1,0 +1,653 @@
+{
+	"_MODULEDATA": "v1.0.0",
+	"SIntro": {
+		"Stitle": {
+			"layoutsource": "$EFL_eftext.Stitle",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_INTRO|1}}"
+			},
+			"fontSize": 30
+		}
+	},
+	"SNavigator": {
+		"SbreadCrumbs": {
+			"layoutsource": "$EFL_eftext.SbreadCrumbs",
+			"fontSize": 20
+		}
+	},
+	"_ONTOLOGY": {
+		"DEDR": {
+			"INTRO": {
+				"1": "<b>DIRECTIONS:</b><br><br>You will be shown a series of statements,<br>check the box corresponding to the option that - <b>MUST</b> - be true<br>according to the given information.",
+				"part1": "Now you will be shown a series of four different statements, check the box corresponding to the option that must be true according to the given information. You may come back at any point and change your selections prior to submitting your final answers."
+			},
+			"Q1": {
+				"1": "1: Based on only the following information...",
+				"2": "<ul><li>All fish live in water.</li><li>Some fish are good to eat.</li><li>Minnows are fish.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS1": {
+				"1": "Minnows live in water.",
+				"2": "Minnows can swim.",
+				"3": "Minnows are good to eat.",
+				"4": "Many minnows live in the lake.",
+				"valid": 1
+			},
+			"Q2": {
+				"1": "2: Based on only the following information...",
+				"2": "<ul><li>At Harley Middle School, all eighth-graders take Health.</li><li>Some eighth-graders take Spanish.</li><li>Phyllis and Juan are eighth-graders at Harley Middle School.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS2": {
+				"1": "Phyllis and Juan are in the same class.",
+				"2": "Juan does not take Spanish.",
+				"3": "Phyllis does not take Spanish.",
+				"4": "Juan takes Health.",
+				"valid": 4
+			},
+			"Q3": {
+				"1": "3: Based on only the following information...",
+				"2": "<ul><li>The express subway train stops only at 25th Street and 50th Street south of midtown.</li><li>The local subway train stops at those streets and every fifth street throughout the city.</li><li>Rodney got off one of those two trains at 40th Street.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS3": {
+				"1": "The express subway train stops at 75th Street.",
+				"2": "Both trains begin their routes at the same station.",
+				"3": "Rodney was riding on the local subway train.",
+				"4": "Rodney walked from the train stop to his destination.",
+				"valid": 3
+			},
+			"Q4": {
+				"1": "4: Based on only the following information...",
+				"2": "<ul><li>An office must be open 24 hours a day.</li><li>Two workers must be in the office at all times.</li><li>Each worker works one eight-hour shift per day.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS4": {
+				"1": "There are sometimes more than two workers in the office.",
+				"2": "There are at least six workers on the office staff.",
+				"3": "Extra workers are available for emergencies.",
+				"4": "Workers sometimes work overtime.",
+				"valid": 2
+			},
+			"Q5": {
+				"1": "5: Based on only the following information...",
+				"2": "<ul><li>Ellen swims every Saturday.</li><li>There is no place to swim in Ellen's town.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS5": {
+				"1": "Ellen's family will move.",
+				"2": "Ellen goes out of town to swim.",
+				"3": "Ellen looks forward to Saturday.",
+				"4": "A pool is being built in Ellen's town.",
+				"valid": 2
+			},
+			"Q6": {
+				"1": "6: Based on only the following information...",
+				"2": "<ul><li>Sano grows rice on his farm in Japan.</li><li>A rice field is called a paddy.</li><li>For rice to grow, the paddy must always be full of water.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS6": {
+				"1": "Sano was born in Japan.",
+				"2": "Sano keeps his rice paddies full of water.",
+				"3": "Sano wears boots when he works in his paddies.",
+				"4": "Sano's family eats rice every day.",
+				"valid": 2
+			},
+			"Q7": {
+				"1": "7: Based on only the following information...",
+				"2": "<ul><li>Every Saturday afternoon Pam visits her aunt.</li><li>Pam's aunt lives in a large house and has a cat.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS7": {
+				"1": "Pam's aunt is not married.",
+				"2": "Pam's aunt serves Pam lunch every Saturday.",
+				"3": "Pam sometimes plays with a cat on Saturday.",
+				"4": "Pam sees her aunt at least four times a month.",
+				"valid": 4
+			},
+			"Q8": {
+				"1": "8: Based on only the following information...",
+				"2": "<ul><li>Jenna, Kerry, Asa, and Demi all live on a street called Smith Court.</li><li>They each live in a separate house.</li><li>They each live exactly one mile from the community flagpole.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS8": {
+				"1": "Smith Court is at least 3 miles long.",
+				"2": "All houses on Smith Court are one mile from the community flagpole.",
+				"3": "The community flagpole is in the center of the town.",
+				"4": "Jenna, Kerry, Asa, and Demi all live within two miles of each other.",
+				"valid": 4
+			},
+			"Q9": {
+				"1": "9: Based on only the following information...",
+				"2": "<ul><li>Clark received a score of 90 on his last History test.</li><li>Clark had forgotten to study for the test.</li><li>This score was ten points higher than any of Clark's other History test scores.</ul>",
+				"3": "<b>Which one of the following MUST be true?</b>"
+			},
+			"ANS9": {
+				"1": "Some of Clark's correct answers were lucky guesses.",
+				"2": "Clark's test-score average in History is lower than 90.",
+				"3": "Students who studied for the test got scores higher than 90.",
+				"4": "There were at least ten questions on the History test.",
+				"valid": 2
+			}
+		}
+	},
+	"SScene1": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q1|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q1|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q1|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS1|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS1|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS1|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS1|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene2": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q2|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q2|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q2|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS2|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS2|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS2|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS2|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene3": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q3|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q3|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q3|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS3|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS3|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS3|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS3|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene4": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q4|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q4|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q4|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS4|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS4|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS4|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS4|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene5": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q5|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q5|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q5|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS5|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS5|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS5|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS5|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene6": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q6|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q6|2}}"
+			},
+			"fontSize": 28
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q6|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS6|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS6|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS6|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS6|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene7": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q7|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q7|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q7|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS7|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS7|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS7|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS7|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene8": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q8|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q8|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q8|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS8|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS8|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS8|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS8|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SScene9": {
+		"Sg1": {
+			"grpData": {
+				"members": [
+					"Sg1ans1",
+					"Sg1ans2",
+					"Sg1ans3",
+					"Sg1ans4"
+				]
+			}
+		},
+		"Squestion1": {
+			"layoutsource": "$EFL_eftext.Squestion1",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q9|1}}"
+			},
+			"fontSize": 40
+		},
+		"Squestion2": {
+			"layoutsource": "$EFL_eftext.Squestion2",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q9|2}}"
+			},
+			"fontSize": 33
+		},
+		"Squestion3": {
+			"layoutsource": "$EFL_eftext.Squestion3",
+			"htmlData": {
+				"html": "{{$EFO_DEDR_Q9|3}}"
+			},
+			"fontSize": 32
+		},
+		"Sg1ans1": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS9|1}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans2": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS9|2}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans3": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS9|3}}",
+				"type": "radio"
+			}
+		},
+		"Sg1ans4": {
+			"btnData": {
+				"label": "{{$EFO_DEDR_ANS9|4}}",
+				"type": "radio"
+			}
+		}
+	},
+	"SSceneStart": {
+		"Sstart": {}
+	},
+	"SSubmit": {
+		"Ssubmit": {}
+	}
+}

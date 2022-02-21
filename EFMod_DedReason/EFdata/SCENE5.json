@@ -1,0 +1,57 @@
+{
+    "_MODULEDATA":"v1.0.0",
+    
+    "SScene5": {
+        "Sg1": {
+            "grpData": {
+                "members":["Sg1ans1","Sg1ans2","Sg1ans3","Sg1ans4"]
+            }            
+        },
+        "Squestion1": {
+            "layoutsource":"$EFL_eftext.Squestion1",
+            "htmlData":{
+                "html": "{{$EFO_DEDR_Q5|1}}"
+            },
+            "fontSize":40
+        },
+        "Squestion2": {
+            "layoutsource":"$EFL_eftext.Squestion2",
+            "htmlData":{
+                "html": "{{$EFO_DEDR_Q5|2}}"
+            },
+            "fontSize":33
+        },
+        "Squestion3": {
+            "layoutsource":"$EFL_eftext.Squestion3",
+            "htmlData":{
+                "html": "{{$EFO_DEDR_Q5|3}}"
+            },
+            "fontSize":32
+        },
+
+        "Sg1ans1": {
+            "btnData": {
+                "label":"{{$EFO_DEDR_ANS5|1}}",
+                "type":"radio"
+            }
+        },
+        "Sg1ans2": {
+            "btnData": {
+                "label":"{{$EFO_DEDR_ANS5|2}}",
+                "type":"radio"
+            }
+        },
+        "Sg1ans3": {
+            "btnData": {
+                "label":"{{$EFO_DEDR_ANS5|3}}",
+                "type":"radio"
+            }
+        },
+        "Sg1ans4": {
+            "btnData": {
+                "label":"{{$EFO_DEDR_ANS5|4}}",
+                "type":"radio"
+            }
+        }
+    }
+}

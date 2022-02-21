@@ -1,0 +1,12 @@
+{
+    "_MODULEDATA":"v1.0.0",
+    "SScene5": {
+        "STextBox1": {
+            "layoutsource":"$EFL_eftext.STextBox1",
+            "htmlData":{
+                "html": "Each experiment set up by some other students might either be a good or a bad experiment."
+            },
+            "fontSize":65
+        }
+    }
+}

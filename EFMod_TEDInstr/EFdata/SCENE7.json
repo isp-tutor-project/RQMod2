@@ -1,0 +1,15 @@
+{
+    "_MODULEDATA":"v1.0.0",
+    "SScene7": {
+        "Stitle": {
+            "layoutsource":"$EFL_eftext.S7.Stitle",
+            "datasource": "$EFL_efdata.scene7.scenePrompt"           
+        },
+        "SsubTitle1": {
+            "layoutsource":"$EFL_eftext.S7.SsubTitle1"
+        },
+        "SsubTitle2": {
+            "layoutsource":"$EFL_eftext.S7.SsubTitle2"
+        }
+    }
+}

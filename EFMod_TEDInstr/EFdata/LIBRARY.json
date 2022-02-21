@@ -1,0 +1,1540 @@
+{
+    "_LIBRARY": {
+        "eflist": {
+            "SListBox1": {
+                "src": "$$EFX.html_list_std"
+            },
+            "SListBox2": {
+                "src": "$$EFX.html_list_std"
+            },
+            "SListBox3": {
+                "src": "$$EFX.html_list_std"
+            },
+            "S9": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S10": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S11": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S12A": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S13": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S14": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S17": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            },
+            "S20": {
+                "Sanswer": {
+                    "src": "$$EFX.html_list_std"
+                }
+            }
+
+        },
+        "eftext": {
+            "SbreadCrumbs": {
+                "src": "$$EFX.html_crumbText"
+            },
+            "STextBox1": {
+                "src": "$$EFX.html_text"
+            },
+            "STextBox2": {
+                "src": "$$EFX.html_text"
+            },
+
+            "S7":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":44
+                    },
+
+                "SsubTitle1": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+
+                "SsubTitle2": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S8":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Sexpt1": 
+                    {
+                        "src": "$$EFX.html_tagText",
+                        "cssClass":"tag",
+                        "fontSize":22
+                    },
+                "Sexpt2": 
+                    {
+                        "src": "$$EFX.html_tagText",
+                        "cssClass":"tag",
+                        "fontSize":22
+                    }
+
+                },
+
+            "S9":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S10":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S11":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S12":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S12A":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S13":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S14":  {
+                "Stitle": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    },
+                "Squestion": 
+                    {
+                        "id": "A",
+                        "src": "$$EFX.html_text2",
+                        "default": true,
+                        "fontSize":34
+                    }
+                },
+
+            "S15":  {
+                "Squestion": 
+                    {
+                        "src": "$$EFX.html_text2"
+                    }
+                },
+                
+            "S20":  {
+                "Squestion": 
+                    {
+                        "src": "$$EFX.html_text2",
+                        "fontSize":34
+                    }
+                }
+
+
+        },
+        "efinput": {},
+        "eftable": {
+            "STable1": {
+                "src": "$$EFX.html_table_ted1",
+                "xname": "STable1",
+                "datasource": "$EFL_efdata.TEDTableData",
+                "templateRef": {
+                    "*": "$$EFM_selectedTopic.ontologyKey"
+                }
+            },
+            "STblExp1": {
+                "src": "$$EFX.html_table_ted1",
+                "xname": "STblExp1",
+                "datasource": "$EFL_efdata.EXPT1TableData",
+                "templateRef": {
+
+                    "S_A?_T?_V1_?|name|1": "$EFM_TEDExpt1V1.ontologyKey",
+                    "S_A?_T?_V1_?|name|2": "$EFM_TEDExpt2V1.ontologyKey",
+
+                    "S_A?_T?_V2_?|name|3": "$EFM_TEDExpt1V2.ontologyKey",
+                    "S_A?_T?_V2_?|name|4": "$EFM_TEDExpt2V2.ontologyKey",
+
+                    "S_A?_T?_V3_?|name|5": "$EFM_TEDExpt1V3.ontologyKey",
+                    "S_A?_T?_V3_?|name|6": "$EFM_TEDExpt2V3.ontologyKey",
+
+                    "S_A?_T?_V4_?|name|7": "$EFM_TEDExpt1V4.ontologyKey",
+                    "S_A?_T?_V4_?|name|8": "$EFM_TEDExpt2V4.ontologyKey",
+
+                    "*": "$$EFM_selectedTopic.ontologyKey"
+                }
+            }
+        },
+        "efdata": {
+            "scene1": {
+                "htmlData":{
+                    "html": "<p>Does the{{$EFO_S_A?_T?_V?|name}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                },
+                "templateRef": {
+                    "S_A?_T?_V?|name": "$EFM_selectedVariable.ontologyKey",
+                    "S_A?_T?|DVs": "$EFM_selectedTopic.ontologyKey"
+                }
+            },
+            "scene2": {
+                "htmlData":{
+                    "html": "<p>Does the{{$EFO_S_A?_T?_V?|name}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                },
+                "templateRef": {
+                    "S_A?_T?_V?|name": "$EFM_selectedVariable.ontologyKey",
+                    "S_A?_T?|DVs": "$EFM_selectedTopic.ontologyKey"
+                }
+            },
+            "scene3": {
+                "htmlData":{
+                    "html": "{{$EFO_TED_S3|part1}}{{$EFO_S_A?_T?|name}}"
+                },
+                "templateRef": {
+                    "S_A?_T?|name": "$EFM_selectedTopic.ontologyKey"
+                }
+            },
+            "scene4": {
+                "box1":{
+                    "htmlData": {
+                        "html": "{{$EFO_TED_S4|part1}}"
+                    }
+                },
+                "box2":{
+                    "htmlData": {
+                        "html": "{{$EFO_TED_S4|part2}}"
+                    }
+                }
+            },
+
+            "scene5": {
+                "htmlData":{
+                    "html":"{{$EFO_TED_S5|part1}}"
+                }
+            },
+
+            "scene6": {
+                "htmlData":{
+                    "html": "{{$EFO_TED_S6|part1}}"
+                }
+            },
+
+            "scene7": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Research Question:<br>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                }    
+            },
+
+            "scene8": {
+
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+
+                "expt1Config":{
+                    "exptStruct": {
+                        "structData":"$EFO_S_A?_T?|exptStruct",
+                        "templateRef": {
+                            "S_A?_T?|exptStruct":"$EFM_TEDExptTopic.ontologyKey"
+                        }
+                    },
+                    
+                    "tagData": {
+                        "layoutsource":"$EFL_eftext.S8.Sexpt1",
+                        "tag":
+                           ["{{$EFO_S_A?_T?_V?|tagname|1}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|1}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|2}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|2}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|3}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|3}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|4}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|4}}</span>"],
+
+                        "templateRef": {
+                            "S_A?_T?_V?|tagname|1": "$EFM_TEDExpt1V1.ontologyKey",
+                            "S_A?_T?_V?|tagname|2": "$EFM_TEDExpt1V2.ontologyKey",
+                            "S_A?_T?_V?|tagname|3": "$EFM_TEDExpt1V3.ontologyKey",
+                            "S_A?_T?_V?|tagname|4": "$EFM_TEDExpt1V4.ontologyKey",
+
+                            "S_A?_T?_V?_?|tag|1": "$EFM_TEDExpt1V1.ontologyKey",
+                            "S_A?_T?_V?_?|tag|2": "$EFM_TEDExpt1V2.ontologyKey",
+                            "S_A?_T?_V?_?|tag|3": "$EFM_TEDExpt1V3.ontologyKey",
+                            "S_A?_T?_V?_?|tag|4": "$EFM_TEDExpt1V4.ontologyKey"
+                        }                    
+                    }
+                },
+
+                "expt2Config":{
+                    "exptStruct": {
+                        "structData":"$EFO_S_A?_T?|exptStruct",
+                        "templateRef": {
+                            "S_A?_T?|exptStruct":"$EFM_TEDExptTopic.ontologyKey"
+                        }
+                    },
+                    
+                    "tagData": {
+                        "layoutsource":"$EFL_eftext.S8.Sexpt2",
+                        "tag":
+                           ["{{$EFO_S_A?_T?_V?|tagname|1}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|1}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|2}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|2}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|3}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|3}}</span>",
+                            "{{$EFO_S_A?_T?_V?|tagname|4}}<br><span style='font-size:1.2em; line-height: 1.4em; font-weight:bold;'>{{$EFO_S_A?_T?_V?_?|tag|4}}</span>"],
+
+                        "templateRef": {
+                            "S_A?_T?_V?|tagname|1": "$EFM_TEDExpt2V1.ontologyKey",
+                            "S_A?_T?_V?|tagname|2": "$EFM_TEDExpt2V2.ontologyKey",
+                            "S_A?_T?_V?|tagname|3": "$EFM_TEDExpt2V3.ontologyKey",
+                            "S_A?_T?_V?|tagname|4": "$EFM_TEDExpt2V4.ontologyKey",
+
+                            "S_A?_T?_V?_?|tag|1": "$EFM_TEDExpt2V1.ontologyKey",
+                            "S_A?_T?_V?_?|tag|2": "$EFM_TEDExpt2V2.ontologyKey",
+                            "S_A?_T?_V?_?|tag|3": "$EFM_TEDExpt2V3.ontologyKey",
+                            "S_A?_T?_V?_?|tag|4": "$EFM_TEDExpt2V4.ontologyKey"
+                        }                    
+                    }
+                }
+            },
+
+            "scene9": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "question": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q1|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTYN|yes}}",
+                                "ontologyKey":"TED_E1_LISTYN|yes",
+                                "index":1,
+                                "value": false,
+                                "id": "incorrect"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTYN|no}}",
+                                "ontologyKey":"TED_E1_LISTYN|no",
+                                "index":2,
+                                "value": true,
+                                "id": "correct"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene10": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "question": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q2|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene11": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "question": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q3|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ23|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ23",
+                                "ontologyKey":"TED_E1_LISTQ23|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene12": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q4|prompt}}"
+                    }
+                }
+            },
+
+            "scene12A": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q4P2|prompt}}"
+                    }
+                },
+                "question": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q4P2|question1}}<br>{{$EFO_TED_E1_Q4P2|question2}}{{$EFO_S_A?_T?_V?|name}}{{$EFO_TED_E1_Q4P2|question3}}"
+                    },
+                    "templateRef": {
+                        "S_A?_T?_V?|name": "$EFM_TEDExptVariable.ontologyKey"
+                    }    
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTYN|yes}}",
+                                "ontologyKey":"TED_E1_LISTYN|yes",
+                                "index":1,
+                                "value": false,
+                                "id": "incorrect"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTYN|no}}",
+                                "ontologyKey":"TED_E1_LISTYN|no",
+                                "index":2,
+                                "value": true,
+                                "id": "correct"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene13": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "Squestion": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q5|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene14": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "question": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q6|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ56|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ56",
+                                "ontologyKey":"TED_E1_LISTQ56|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+
+            "scene15": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Research Question:<br>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}<br><br></p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                },
+                "Squestion": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q7|question}}"
+                    }
+                }
+            },
+
+            "scene16": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "<p>Research Question:<br>Does the{{$EFO_S_A?_T?_RQ?|ExpSelected}}affect the{{$EFO_S_A?_T?|DVs}}</p>"
+                    },
+                    "templateRef": {
+						"S_A?_T?_RQ?|ExpSelected": "$EFM_TEDExptRQ.ontologyKey",
+						"S_A?_T?|DVs": "$EFM_TEDExptRQ.ontologyKey"
+                    }
+                }
+            },
+
+            "scene17": {
+                "scenePrompt": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_E1_Q9|part1}}{{$EFO_S_A?_T?_V?|name|1}}{{$EFO_TED_E1_Q9|part2}}"
+                    },
+                    "templateRef": {
+						"S_A?_T?_V?|name|1": "$EFM_TEDExptVariable.ontologyKey"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTQ9|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTQ9",
+                                "ontologyKey":"TED_E1_LISTQ9|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+            "scene18": {
+                "htmlData":{
+                    "html":"{{$EFO_TED_POST_INTRO|question}}"
+                }
+            },
+            "scene19": {
+                "htmlData":{
+                    "html": "{{$EFO_TED_POST_E|part1}}{{$EFO_S_A?_T?_V?|name}}{{$EFO_TED_POST_E|part2}}{{$EFO_S_A?_T?|DVs}}</p>"
+                },
+                "templateRef": {
+                    "S_A?_T?_V?|name": "$EFM_TEDExptPOSTTV.ontologyKey",
+                    "S_A?_T?|DVs": "$EFM_selectedTopic.ontologyKey"
+                }
+            },
+            "scene20": {
+                "Squestion": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_POST_Q|question}}"
+                    }
+                },
+                "Sanswer": {
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans1}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":1,
+                                "id": "1"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans2}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":2,
+                                "id": "2"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans3}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":3,
+                                "id": "3"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans4}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":4,
+                                "id": "4"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans5}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":5,
+                                "id": "5"
+                            },
+                            {
+                                "name": "{{$EFO_TED_E1_LISTPOST|ans6}}",
+                                "value": "$EFL_efdata.TED.E1.LISTPOST",
+                                "ontologyKey":"TED_E1_LISTPOST|yes",
+                                "index":6,
+                                "id": "6"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_S_PH1|name}}"
+                    }
+                }
+            },
+            "scene21": {
+                "summary": {
+                    "htmlData":{
+                        "html": "{{$EFO_TED_POST_SUMMARY|summary}}"
+                    }
+                }
+            },
+
+            "nulllist": {
+                "listdata": {
+                    "options": [],
+                    "placeHolder": ""
+                }
+            },
+
+            "AOS": {
+                "description": "Areas of Science used in TED",
+                "listdata": {
+                    "options": [
+                        {
+                            "name": "{{$EFO_S_A1|name}}",
+                            "value": "$EFL_efdata.AOS.A1",
+                            "ontologyKey":"S_A1|name",
+                            "index":1,
+                            "id": "area1"
+                        },
+                        {
+                            "name": "{{$EFO_S_A2|name}}",
+                            "value": "$EFL_efdata.AOS.A2",
+                            "ontologyKey":"S_A2|name",
+                            "index":2,
+                            "id": "area2"
+                        },
+                        {
+                            "name": "{{$EFO_S_A3|name}}",
+                            "value": "$EFL_efdata.AOS.A3",
+                            "ontologyKey":"S_A3|name",
+                            "index":3,
+                            "id": "area3"
+                        },
+                        {
+                            "name": "{{$EFO_S_A4|name}}",
+                            "value": "$EFL_efdata.AOS.A4",
+                            "ontologyKey":"S_A4|name",
+                            "index":4,
+                            "id": "area4"
+                        }
+                    ],
+                    "placeHolder": "{{$EFO_S_PH1|name}}"
+                },
+                "A1": {
+                    "description": "PhysicsChemistryTopics",
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_S_A1_T1|name}}",
+                                "value": "$EFL_efdata.AOS.A1.T1",
+                                "ontologyKey":"S_A1_T1|name",
+                                "index":1,
+                                "id": "topic1"
+                            },
+                            {
+                                "name": "{{$EFO_S_A1_T2|name}}",
+                                "value": "$EFL_efdata.AOS.A1.T2",
+                                "ontologyKey":"S_A1_T2|name",
+                                "index":2,
+                                "id": "topic2"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_LV_PH1|name}}"
+                    },
+                    "T1": {
+                        "description": "Crystal Growth",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A1_T1_V1|name}}",
+                                    "ontologyKey":"S_A1_T1_V1|name"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A1_T1_V2|name}}",
+                                    "ontologyKey":"S_A1_T1_V2|name"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A1_T1_V3|name}}",
+                                    "ontologyKey":"S_A1_T1_V3|name"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A1_T1_V4|name}}",
+                                    "ontologyKey":"S_A1_T1_V4|name"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    },
+                    "T2": {
+                        "description": "Soda-Mint Reaction",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A1_T2_V1|name}}",
+                                    "ontologyKey":"S_A1_T2_V1|name"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A1_T2_V2|name}}",
+                                    "ontologyKey":"S_A1_T2_V2|name"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A1_T2_V3|name}}",
+                                    "ontologyKey":"S_A1_T2_V3|name"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A1_T2_V4|name}}",
+                                    "ontologyKey":"S_A1_T2_V4|name"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    }
+                },
+                "A2": {
+                    "description": "HeatTempTopics",
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_S_A2_T1|name}}",
+                                "value": "$EFL_efdata.AOS.A2.T1",
+                                "ontologyKey":"S_A2_T1|name",
+                                "index":1,
+                                "id": "topic1"
+                            },
+                            {
+                                "name": "{{$EFO_S_A2_T2|name}}",
+                                "value": "$EFL_efdata.AOS.A2.T2",
+                                "ontologyKey":"S_A2_T2|name",
+                                "index":2,
+                                "id": "topic2"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_LV_PH1|name}}"
+                    },
+                    "T1": {
+                        "description": "Ice Melting",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A2_T1_V1|name}}",
+                                    "ontologyKey":"S_A2_T1_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A2_T1_V2|name}}",
+                                    "ontologyKey":"S_A2_T1_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A2_T1_V3|name}}",
+                                    "ontologyKey":"S_A2_T1_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A2_T1_V4|name}}",
+                                    "ontologyKey":"S_A2_T1_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    },
+                    "T2": {
+                        "description": "Balloon",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A2_T2_V1|name}}",
+                                    "ontologyKey":"S_A2_T2_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A2_T2_V2|name}}",
+                                    "ontologyKey":"S_A2_T2_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A2_T2_V3|name}}",
+                                    "ontologyKey":"S_A2_T2_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A2_T2_V4|name}}",
+                                    "ontologyKey":"S_A2_T2_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    }
+                },
+                "A3": {
+                    "description": "ForcesMotionTopics",
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_S_A3_T1|name}}",
+                                "value": "$EFL_efdata.AOS.A3.T1",
+                                "ontologyKey":"S_A3_T1|name",
+                                "index":1,
+                                "id": "topic1"
+                            },
+                            {
+                                "name": "{{$EFO_S_A3_T2|name}}",
+                                "value": "$EFL_efdata.AOS.A3.T2",
+                                "ontologyKey":"S_A3_T2|name",
+                                "index":2,
+                                "id": "topic2"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_LV_PH1|name}}"
+                    },
+                    "T1": {
+                        "description": "Ramps",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A3_T1_V1|name}}",
+                                    "ontologyKey":"S_A3_T1_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A3_T1_V2|name}}",
+                                    "ontologyKey":"S_A3_T1_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A3_T1_V3|name}}",
+                                    "ontologyKey":"S_A3_T1_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A3_T1_V4|name}}",
+                                    "ontologyKey":"S_A3_T1_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    },
+                    "T2": {
+                        "description": "Sinking",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A3_T2_V1|name}}",
+                                    "ontologyKey":"S_A3_T2_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A3_T2_V2|name}}",
+                                    "ontologyKey":"S_A3_T2_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A3_T2_V3|name}}",
+                                    "ontologyKey":"S_A3_T2_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A3_T2_V4|name}}",
+                                    "ontologyKey":"S_A3_T2_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    }
+                },
+                "A4": {
+                    "description": "Plant Reproduction",
+                    "listdata": {
+                        "options": [
+                            {
+                                "name": "{{$EFO_S_A4_T1|name}}",
+                                "value": "$EFL_efdata.AOS.A4.T1",
+                                "ontologyKey":"S_A4_T1|name",
+                                "index":1,
+                                "id": "topic1"
+                            },
+                            {
+                                "name": "{{$EFO_S_A4_T2|name}}",
+                                "value": "$EFL_efdata.AOS.A4.T2",
+                                "ontologyKey":"S_A4_T2|name",
+                                "index":2,
+                                "id": "topic2"
+                            }
+                        ],
+                        "placeHolder": "{{$EFO_LV_PH1|name}}"
+                    },
+                    "T1": {
+                        "description": "Plant Reproduction - greenhouse",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A4_T1_V1|name}}",
+                                    "ontologyKey":"S_A4_T1_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A4_T1_V2|name}}",
+                                    "ontologyKey":"S_A4_T1_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A4_T1_V3|name}}",
+                                    "ontologyKey":"S_A4_T1_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A4_T1_V4|name}}",
+                                    "ontologyKey":"S_A4_T1_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    },
+                    "T2": {
+                        "description": "Algae Reproduction",
+                        "listdata": {
+                            "options": [
+                                {
+                                    "index":1,
+                                    "name": "{{$EFO_S_A4_T2_V1|name}}",
+                                    "ontologyKey":"S_A4_T2_V1|name",
+                                    "id": "var1"
+                                },
+                                {
+                                    "index":2,
+                                    "name": "{{$EFO_S_A4_T2_V2|name}}",
+                                    "ontologyKey":"S_A4_T2_V2|name",
+                                    "id": "var2"
+                                },
+                                {
+                                    "index":3,
+                                    "name": "{{$EFO_S_A4_T2_V3|name}}",
+                                    "ontologyKey":"S_A4_T2_V3|name",
+                                    "id": "var3"
+                                },
+                                {
+                                    "index":4,
+                                    "name": "{{$EFO_S_A4_T2_V4|name}}",
+                                    "ontologyKey":"S_A4_T2_V4|name",
+                                    "id": "var4"
+                                }
+                            ],
+                            "placeHolder": "{{$EFO_LV_PH1|name}}"
+                        }
+                    }
+                }
+            },
+            "TEDTableData": {
+                "tabledata": {
+                    "rowdata": [
+                        [
+                            {
+                                "value": "{{$EFO_LV_H1_A|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_B|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_C|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_D|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V1_A|name}}",
+                                    "{{$EFO_S_A?_T?_V1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V1_A|name}}",
+                                    "{{$EFO_S_A?_T?_V1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O2_A|name}}",
+                                    "{{$EFO_LV_O2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V2|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V2_A|name}}",
+                                    "{{$EFO_S_A?_T?_V2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V2_A|name}}",
+                                    "{{$EFO_S_A?_T?_V2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O2_A|name}}",
+                                    "{{$EFO_LV_O2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V3|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V3_A|name}}",
+                                    "{{$EFO_S_A?_T?_V3_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V3_A|name}}",
+                                    "{{$EFO_S_A?_T?_V3_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O2_A|name}}",
+                                    "{{$EFO_LV_O2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V4|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V4_A|name}}",
+                                    "{{$EFO_S_A?_T?_V4_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_S_A?_T?_V4_A|name}}",
+                                    "{{$EFO_S_A?_T?_V4_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O2_A|name}}",
+                                    "{{$EFO_LV_O2_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ]
+                    ]
+                }
+            },
+            "EXPT1TableData": {
+                "tabledata": {
+                    "rowdata": [
+                        [
+                            {
+                                "value": "{{$EFO_LV_H1_A|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_B|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_C|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_LV_H1_E|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V1|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V1_?|name|1}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V1_?|name|2}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O1_A|name}}",
+                                    "{{$EFO_LV_O1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V2|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V2_?|name|3}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V2_?|name|4}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O1_A|name}}",
+                                    "{{$EFO_LV_O1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V3|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V3_?|name|5}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V3_?|name|6}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O1_A|name}}",
+                                    "{{$EFO_LV_O1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ],
+                        [
+                            {
+                                "value": "{{$EFO_S_A?_T?_V4|name}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V4_?|name|7}}"
+                            },
+                            {
+                                "value": "{{$EFO_S_A?_T?_V4_?|name|8}}"
+                            },
+                            {
+                                "value": "$LIST",
+                                "options": [
+                                    "{{$EFO_LV_O1_A|name}}",
+                                    "{{$EFO_LV_O1_B|name}}"
+                                ],
+                                "placeHolder": "{{$EFO_LV_PH1|name}}"
+                            }
+                        ]
+                    ]
+                }
+            }
+
+        }
+    }
+}
